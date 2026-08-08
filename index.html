@@ -1,66 +1,97 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gulf Stocks Privacy Policy</title>
+  <title>سياسة الخصوصية - أسهم الخليج | Gulf Stocks Privacy Policy</title>
   <style>
     :root {
       color-scheme: light dark;
-      --bg: #f8fafc;
+      --bg: #f7f8fb;
       --panel: #ffffff;
       --text: #17202a;
-      --muted: #657181;
-      --line: #dbe2ea;
-      --accent: #16a36f;
+      --muted: #667281;
+      --line: #dce3eb;
+      --accent: #159b6d;
+      --accent-soft: #e7f6ef;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
         --bg: #111923;
         --panel: #17212c;
-        --text: #f3f6f9;
-        --muted: #a7b0bc;
-        --line: #2d3a48;
+        --text: #f4f7fa;
+        --muted: #a9b3bf;
+        --line: #2f3c4a;
+        --accent-soft: #18362c;
       }
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
       margin: 0;
       background: var(--bg);
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.55;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Arabic", sans-serif;
+      line-height: 1.65;
     }
 
     main {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 32px 18px 56px;
+      width: min(920px, calc(100% - 32px));
+      margin-inline: auto;
+      padding-block: 32px 56px;
+    }
+
+    .language-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-block-end: 18px;
+    }
+
+    .language-nav a {
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 8px 14px;
+      background: var(--panel);
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
     }
 
     article {
       background: var(--panel);
       border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 28px;
+      border-radius: 18px;
+      padding: clamp(22px, 5vw, 38px);
+      box-shadow: 0 18px 44px rgba(23, 32, 42, 0.08);
+    }
+
+    article + article {
+      margin-block-start: 28px;
     }
 
     h1 {
-      margin: 0 0 8px;
-      font-size: clamp(30px, 5vw, 44px);
-      line-height: 1.05;
+      margin: 0;
+      font-size: clamp(30px, 6vw, 46px);
+      line-height: 1.12;
+      letter-spacing: 0;
     }
 
     h2 {
-      margin-top: 30px;
-      padding-top: 18px;
-      border-top: 1px solid var(--line);
-      font-size: 21px;
+      margin-block: 30px 10px;
+      padding-block-start: 18px;
+      border-block-start: 1px solid var(--line);
+      font-size: 22px;
+      letter-spacing: 0;
     }
 
     h3 {
-      margin-top: 22px;
+      margin-block: 22px 8px;
       font-size: 17px;
     }
 
@@ -69,110 +100,220 @@
       font-size: 16px;
     }
 
-    a {
-      color: var(--accent);
-      font-weight: 600;
+    ul {
+      padding-inline-start: 1.3rem;
     }
 
-    .effective-date {
-      margin-top: 0;
+    a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .effective-date,
+    .note {
       color: var(--muted);
-      font-weight: 600;
+      font-weight: 700;
     }
 
     .notice {
+      margin-block: 18px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px 16px;
+      background: var(--accent-soft);
       color: var(--text);
-      font-weight: 600;
+      font-weight: 700;
+    }
+
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+      margin-block: 18px;
+    }
+
+    .summary div {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+    }
+
+    .summary strong {
+      display: block;
+      margin-block-end: 4px;
     }
   </style>
 </head>
 <body>
   <main>
-    <article>
+    <nav class="language-nav" aria-label="Language links">
+      <a href="#arabic">العربية</a>
+      <a href="#english">English</a>
+    </nav>
+
+    <article id="arabic" dir="rtl" lang="ar">
+      <h1>سياسة الخصوصية لأسهم الخليج</h1>
+      <p class="effective-date">تاريخ السريان: 8 أغسطس 2026</p>
+      <p>أسهم الخليج تطبيق شخصي للبحث ومتابعة الأسهم المدرجة في أسواق دول مجلس التعاون الخليجي. توضح هذه السياسة البيانات التي قد يجمعها التطبيق أو مزودو الخدمات، ولماذا نستخدمها، وما الخيارات المتاحة لك.</p>
+      <p class="notice">أسهم الخليج ليس نصيحة استثمارية. الأسعار، الرسوم البيانية، الأساسيات، الدرجات، وتصنيفات الشراء أو الاحتفاظ أو البيع مخصصة للبحث الشخصي فقط.</p>
+
+      <h2>من نحن</h2>
+      <p>يتم توفير تطبيق أسهم الخليج بواسطة Hamam Alabdulla. للاستفسارات المتعلقة بالخصوصية أو طلبات حذف البيانات، تواصل معنا عبر <a href="mailto:hamam@gccapps.com">hamam@gccapps.com</a>.</p>
+
+      <h2>ملخص البيانات</h2>
+      <div class="summary">
+        <div><strong>بيانات الحساب</strong><span>معرف المستخدم والبريد أو الاسم إذا قدمته Apple عند استخدام تسجيل الدخول بواسطة Apple.</span></div>
+        <div><strong>محتوى المستخدم</strong><span>رموز قائمة المتابعة، ترتيبها، الملاحظات الشخصية، وتواريخ المزامنة عند تفعيل المزامنة السحابية.</span></div>
+        <div><strong>الاشتراكات</strong><span>حالة الاشتراك ومعلومات المعاملة اللازمة لتفعيل مزايا Pro والتحقق من الاستحقاق.</span></div>
+        <div><strong>الإعلانات والتشخيص</strong><span>قد تعالج Google AdMob وFirebase Crashlytics معرفات الجهاز، تفاعلات الإعلانات، الموقع التقريبي، وسجلات الأعطال.</span></div>
+      </div>
+
+      <h2>ما الذي نجمعه ولماذا</h2>
+      <h3>البيانات التي تقدمها أو تنشئها</h3>
+      <ul>
+        <li>رموز الأسهم في قائمة المتابعة، ترتيب العرض، والملاحظات الشخصية.</li>
+        <li>تفضيل اللغة وإعدادات أول تشغيل المخزنة على الجهاز.</li>
+        <li>معرف مستخدم Firebase المرتبط بتسجيل الدخول بواسطة Apple عند تفعيل المزامنة السحابية.</li>
+        <li>الاسم أو البريد الإلكتروني إذا وفرته Apple؛ قد يكون البريد عنوانا خاصا بخدمة Apple Private Relay.</li>
+      </ul>
+      <p>نستخدم هذه البيانات لتشغيل قائمة المتابعة، الملاحظات، المزامنة، إعدادات اللغة، واستعادة البيانات على أجهزتك عند تفعيل المزامنة.</p>
+
+      <h3>البيانات التي تعالج تلقائيا</h3>
+      <ul>
+        <li>بيانات الأعطال والتشخيص من Firebase Crashlytics لتحسين الاستقرار.</li>
+        <li>إشارات App Check والحماية من إساءة استخدام واجهات backend.</li>
+        <li>بيانات الاشتراك من StoreKit للتحقق من مزايا Gulf Stocks Pro.</li>
+        <li>معرفات الجهاز والإعلانات، تفاعلات الإعلانات، وموقع تقريبي مستنتج من عنوان IP عند عرض إعلانات Google AdMob في النسخة المجانية.</li>
+      </ul>
+      <p>لا نستخدم Firebase Analytics؛ ملف Firebase الخاص بالتطبيق يضبط التحليلات على غير مفعلة.</p>
+
+      <h2>الأساس القانوني</h2>
+      <p>نعالج البيانات لتقديم وظائف التطبيق التي تطلبها، إدارة الاشتراك والمزامنة، حماية الخدمة من إساءة الاستخدام، الامتثال لمتطلبات المنصات، وتحسين موثوقية التطبيق. عندما يتطلب القانون أو إعدادات الجهاز موافقة، مثل موافقة الإعلانات أو تتبع التطبيقات، يطلب التطبيق تلك الموافقة قبل المتابعة.</p>
+
+      <h2>المزامنة السحابية</h2>
+      <p>المزامنة السحابية اختيارية وتتطلب تسجيل الدخول بواسطة Apple واشتراكا فعالا في Gulf Stocks Pro. عند تفعيلها، تخزن Firebase قائمة المتابعة والملاحظات وتواريخ الإنشاء والتعديل تحت معرف المستخدم الخاص بك. إذا لم تستخدم المزامنة، تبقى قائمة المتابعة والملاحظات محليا على جهازك باستثناء البيانات التي تعالجها الخدمات الخارجية الموضحة هنا.</p>
+
+      <h2>الإعلانات والموافقة</h2>
+      <p>قد تعرض النسخة المجانية إعلانات من Google AdMob. قد تعالج Google وشركاؤها معرفات الجهاز والإعلانات، تفاعلات التطبيق أو الإعلان، الموقع التقريبي، وبيانات الأداء لعرض الإعلانات وقياسها. يستخدم التطبيق Google User Messaging Platform لإدارة موافقة الإعلانات عند الحاجة، ويستخدم App Tracking Transparency من Apple قبل السماح بالتتبع لأغراض الإعلانات.</p>
+
+      <h2>الخدمات الخارجية</h2>
+      <ul>
+        <li>Apple: تسجيل الدخول بواسطة Apple، StoreKit، ومعالجة الاشتراكات.</li>
+        <li>Firebase: Authentication، Firestore، Functions، App Check، وCrashlytics.</li>
+        <li>Google AdMob وGoogle User Messaging Platform: الإعلانات وإدارة الموافقة.</li>
+        <li>مزودو بيانات السوق ومصادر الاستيراد الرسمية: الأسعار والرسوم البيانية والأساسيات.</li>
+      </ul>
+      <p>يعالج هؤلاء المزودون البيانات وفق سياسات الخصوصية الخاصة بهم. لا نبيع قائمة متابعتك أو ملاحظاتك أو بيانات حسابك.</p>
+
+      <h2>الاحتفاظ بالبيانات</h2>
+      <p>تبقى البيانات المحلية على جهازك حتى تحذفها من التطبيق، أو تحذف التطبيق، أو تعيد ضبط بياناته. تبقى بيانات المزامنة السحابية ما دام الحساب فعالا أو حتى تطلب حذفها. قد نحتفظ بسجلات الاشتراك أو الحماية من الاحتيال أو السجلات المطلوبة نظاميا للمدة اللازمة للامتثال والمتابعة التشغيلية.</p>
+
+      <h2>حقوقك وخياراتك</h2>
+      <ul>
+        <li>يمكنك حذف عناصر قائمة المتابعة والملاحظات من داخل التطبيق.</li>
+        <li>يمكنك حذف حسابك وبيانات المزامنة السحابية من إعدادات التطبيق عندما تكون مسجلا الدخول.</li>
+        <li>يمكنك مراسلتنا لطلب الوصول إلى بياناتك، تصحيحها، تصديرها، أو حذفها.</li>
+        <li>يمكنك إدارة تفضيلات الإعلانات من إعدادات التطبيق عند توفر خيار الخصوصية، ومن إعدادات iOS.</li>
+      </ul>
+
+      <h2>الأمان</h2>
+      <p>نستخدم Firebase وخدمات Apple وGoogle التي تنقل البيانات عبر اتصالات مشفرة. نحصر مفاتيح مزودي بيانات السوق في backend بدلا من تخزينها داخل تطبيق iOS. رغم ذلك، لا توجد طريقة نقل أو تخزين إلكتروني آمنة بنسبة 100%.</p>
+
+      <h2>خصوصية الأطفال</h2>
+      <p>أسهم الخليج غير موجه للأطفال دون 13 عاما، وليس جزءا من فئة الأطفال في App Store. إذا اعتقدت أن طفلا قدم بيانات شخصية، تواصل معنا لحذفها.</p>
+
+      <h2>النقل الدولي</h2>
+      <p>قد تعالج Apple وGoogle وFirebase ومزودو البنية التحتية البيانات في دول أخرى غير دولة إقامتك، وفقا لسياساتهم ومتطلبات الأنظمة المعمول بها.</p>
+
+      <h2>تحديثات السياسة</h2>
+      <p>قد نحدث هذه السياسة عند تغيير ميزات التطبيق أو الخدمات المستخدمة. سننشر النسخة الجديدة في هذه الصفحة مع تاريخ سريان محدث.</p>
+
+      <h2>التواصل</h2>
+      <p>لأسئلة الخصوصية أو طلبات حذف البيانات: <a href="mailto:hamam@gccapps.com">hamam@gccapps.com</a>.</p>
+      <p class="note">هذه السياسة توفر ملخصا عمليا لممارسات الخصوصية في التطبيق، وليست استشارة قانونية.</p>
+    </article>
+
+    <article id="english" dir="ltr" lang="en">
       <h1>Privacy Policy for Gulf Stocks</h1>
-      <p class="effective-date">Effective date: June 18, 2026</p>
+      <p class="effective-date">Effective date: August 8, 2026</p>
+      <p>Gulf Stocks is a personal research app for tracking stocks listed across GCC markets. This policy explains what data the app or its service providers may collect, why it is used, and what choices you have.</p>
+      <p class="notice">Gulf Stocks is not investment advice. Prices, charts, fundamentals, scores, and Buy/Hold/Sell labels are provided for personal research only.</p>
 
-      <p>Gulf Stocks is a personal research tool for tracking stocks listed across GCC markets. This Privacy Policy explains what information the app collects, how it is used, and the choices you have.</p>
-      <p class="notice">Gulf Stocks is not investment advice. Scores, labels, market data, charts, and fundamentals are provided for personal research only.</p>
+      <h2>Who We Are</h2>
+      <p>Gulf Stocks is provided by Hamam Alabdulla. For privacy questions or deletion requests, contact <a href="mailto:hamam@gccapps.com">hamam@gccapps.com</a>.</p>
 
-      <h2>Information We Collect</h2>
+      <h2>Data Summary</h2>
+      <div class="summary">
+        <div><strong>Account data</strong><span>User identifier plus email or name if Apple provides it through Sign in with Apple.</span></div>
+        <div><strong>User content</strong><span>Watchlist symbols, ordering, personal notes, and sync timestamps when cloud sync is enabled.</span></div>
+        <div><strong>Subscriptions</strong><span>Subscription status and transaction information needed to unlock and verify Pro features.</span></div>
+        <div><strong>Ads and diagnostics</strong><span>Google AdMob and Firebase Crashlytics may process device identifiers, ad interactions, approximate location, and crash logs.</span></div>
+      </div>
 
-      <h3>Information you provide or create</h3>
-      <p>Gulf Stocks may store the following information when you use the app:</p>
+      <h2>What We Collect and Why</h2>
+      <h3>Data you provide or create</h3>
       <ul>
-        <li>Watchlist symbols, sort order, and saved stock notes.</li>
-        <li>Language preference and first-run app preferences.</li>
-        <li>Subscription status for Gulf Stocks Pro.</li>
-        <li>If you use Sign in with Apple, your Apple-provided account identifier and, if Apple provides them, your name and email address.</li>
+        <li>Watchlist stock symbols, display order, and personal notes.</li>
+        <li>Language preference and first-run preferences stored on the device.</li>
+        <li>Firebase user ID linked to Sign in with Apple when cloud sync is enabled.</li>
+        <li>Name or email if Apple provides it; the email may be an Apple Private Relay address.</li>
       </ul>
-      <p>Watchlist notes are user-created content. Avoid storing sensitive personal information in notes.</p>
+      <p>We use this data to provide the watchlist, notes, sync, language settings, and restore features across your devices when sync is enabled.</p>
 
-      <h3>Information collected automatically</h3>
-      <p>The app and its service providers may process:</p>
+      <h3>Data processed automatically</h3>
       <ul>
-        <li>Device identifiers and advertising identifiers used by advertising services.</li>
-        <li>Product interaction and advertising interaction data.</li>
-        <li>Approximate location inferred from IP address, used by advertising services.</li>
-        <li>Crash, diagnostic, and performance information from app frameworks and advertising services.</li>
-        <li>App Check and security signals used to protect backend services from abuse.</li>
+        <li>Crash and diagnostic data from Firebase Crashlytics to improve app stability.</li>
+        <li>App Check and security signals to protect backend APIs from abuse.</li>
+        <li>StoreKit subscription data to verify Gulf Stocks Pro access.</li>
+        <li>Device and advertising identifiers, ad interactions, and approximate IP-derived location when Google AdMob ads are shown in the free version.</li>
       </ul>
+      <p>Firebase Analytics is not used; the app's Firebase configuration has analytics disabled.</p>
 
-      <h2>How We Use Information</h2>
-      <p>We use information to:</p>
-      <ul>
-        <li>Provide the watchlist, stock detail, notes, and language features.</li>
-        <li>Sync your watchlist and notes across devices when you enable cloud sync.</li>
-        <li>Verify and manage Gulf Stocks Pro subscriptions.</li>
-        <li>Show ads in the free version of the app.</li>
-        <li>Remove ads and unlock paid features for Pro users.</li>
-        <li>Protect backend market data services from abuse.</li>
-        <li>Improve reliability and diagnose technical issues.</li>
-      </ul>
+      <h2>Legal Basis</h2>
+      <p>We process data to provide requested app functionality, manage subscriptions and sync, protect the service from abuse, meet platform requirements, and improve reliability. When law or device settings require consent, such as advertising consent or app tracking permission, the app asks before proceeding.</p>
 
       <h2>Cloud Sync</h2>
-      <p>Cloud sync is optional and requires Sign in with Apple and an active Gulf Stocks Pro subscription. When enabled, watchlist symbols, sort order, notes, creation dates, and note edit dates are stored in Firebase under your user ID.</p>
-      <p>If you do not use cloud sync, your watchlist and notes remain stored locally on your device, except for data processed by third-party services described in this policy.</p>
-
-      <h2>Subscriptions and Purchases</h2>
-      <p>Subscriptions are processed by Apple through the App Store. Gulf Stocks receives subscription status and transaction information needed to unlock Pro features and verify entitlement for cloud sync. Payment details are handled by Apple and are not received by Gulf Stocks.</p>
+      <p>Cloud sync is optional and requires Sign in with Apple plus an active Gulf Stocks Pro subscription. When enabled, Firebase stores your watchlist, notes, creation dates, and note edit dates under your user ID. If you do not use cloud sync, watchlist and note data stay local to your device except for third-party processing described in this policy.</p>
 
       <h2>Advertising and Consent</h2>
-      <p>The free version of Gulf Stocks may show ads using Google AdMob. Google and its partners may process device identifiers, advertising data, product interaction data, approximate location, diagnostics, and performance data to provide and measure ads.</p>
-      <p>Where required, the app asks for consent using Google's User Messaging Platform before requesting ads. Your device and Apple privacy settings may also affect whether personalized advertising or tracking is available.</p>
-      <p>Gulf Stocks does not sell your watchlist, notes, or account data.</p>
+      <p>The free version may show ads through Google AdMob. Google and its partners may process device and advertising identifiers, app or ad interactions, approximate location, and performance data to provide and measure ads. The app uses Google User Messaging Platform to manage ad consent where required and Apple's App Tracking Transparency before allowing tracking for advertising.</p>
 
       <h2>Third-Party Services</h2>
-      <p>Gulf Stocks uses third-party services including:</p>
       <ul>
-        <li>Apple Sign in with Apple and StoreKit for authentication and subscriptions.</li>
-        <li>Firebase Authentication, Firestore, Functions, and App Check for account, sync, backend, and abuse-prevention features.</li>
-        <li>Google AdMob and User Messaging Platform for ads and consent.</li>
-        <li>Market data providers and official market-data import sources for stock prices, charts, and fundamentals.</li>
+        <li>Apple: Sign in with Apple, StoreKit, and subscription processing.</li>
+        <li>Firebase: Authentication, Firestore, Functions, App Check, and Crashlytics.</li>
+        <li>Google AdMob and Google User Messaging Platform: ads and consent management.</li>
+        <li>Market data providers and official import sources: prices, charts, and fundamentals.</li>
       </ul>
-      <p>These providers may process information according to their own privacy policies.</p>
+      <p>These providers process data according to their own privacy policies. We do not sell your watchlist, notes, or account data.</p>
 
       <h2>Data Retention</h2>
-      <p>Local app data remains on your device until you delete it in the app, remove the app, or reset the app's data.</p>
-      <p>Cloud sync data remains stored while your account is active or until deletion is requested. Subscription records may be retained as needed for entitlement verification, fraud prevention, accounting, and legal compliance.</p>
+      <p>Local app data remains on your device until you delete it in the app, delete the app, or reset app data. Cloud sync data remains while your account is active or until you request deletion. Subscription, fraud-prevention, or legally required records may be retained as needed for compliance and operations.</p>
 
-      <h2>Deleting Your Data</h2>
-      <p>You can remove local watchlist items and notes from inside the app. Deleting the app removes local app data from your device.</p>
-      <p>To request deletion of cloud sync data associated with your Sign in with Apple account, contact the developer using the contact method below.</p>
+      <h2>Your Rights and Choices</h2>
+      <ul>
+        <li>You can delete watchlist items and notes inside the app.</li>
+        <li>You can delete your account and cloud sync data from Settings while signed in.</li>
+        <li>You can contact us to request access, correction, export, or deletion of your data.</li>
+        <li>You can manage ad preferences through the app's privacy options when available and through iOS settings.</li>
+      </ul>
+
+      <h2>Security</h2>
+      <p>We use Firebase, Apple, and Google services that transmit data over encrypted connections. Market data provider keys are kept in the backend instead of inside the iOS app. No electronic transmission or storage method is 100% secure.</p>
 
       <h2>Children's Privacy</h2>
-      <p>Gulf Stocks is not directed to children under 13. The app is intended for users who are able to use financial research tools responsibly.</p>
+      <p>Gulf Stocks is not directed to children under 13 and is not in the App Store Kids category. If you believe a child provided personal data, contact us so we can delete it.</p>
 
-      <h2>International Data Processing</h2>
-      <p>Your information may be processed in countries other than your country of residence, including by Apple, Google, Firebase, and other infrastructure providers.</p>
+      <h2>International Transfers</h2>
+      <p>Apple, Google, Firebase, and infrastructure providers may process data in countries other than your country of residence, according to their policies and applicable legal requirements.</p>
 
-      <h2>Changes to This Policy</h2>
-      <p>This Privacy Policy may be updated from time to time. Updates will be posted in this repository with a new effective date.</p>
+      <h2>Policy Updates</h2>
+      <p>We may update this policy when app features or service providers change. The updated version will be posted on this page with a new effective date.</p>
 
       <h2>Contact</h2>
-      <p>For privacy questions or data deletion requests, open an issue at:</p>
-      <p><a href="https://github.com/qtrcipher/gulf-stocks-privacy-policy/issues">https://github.com/qtrcipher/gulf-stocks-privacy-policy/issues</a></p>
+      <p>For privacy questions or deletion requests: <a href="mailto:hamam@gccapps.com">hamam@gccapps.com</a>.</p>
+      <p class="note">This policy is a practical privacy summary for the app and is not legal advice.</p>
     </article>
   </main>
 </body>
 </html>
-
